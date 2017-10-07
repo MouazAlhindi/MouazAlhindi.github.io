@@ -12,7 +12,6 @@ $(document).ready(function(){
         var route = $this.attr('data-route');
   
         links.each(function(){
-            console.log("Method 2 exec");
           var link = $(this);
           link.attr('data-route',route);
   
@@ -20,7 +19,7 @@ $(document).ready(function(){
   
           if("[data-route="+route+"]"){
             link.attr('href',route+'/'+route_url)
-            link.attr('text-route', route+'/'+route_url)
+            link.attr('text-route' +'/'+route_url)
           }
   
         });
