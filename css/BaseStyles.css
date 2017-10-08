@@ -23,14 +23,15 @@
     height: auto;
 }
 
-footerBlock{
+.footerBlock{
     flex-basis: 50%;
     text-align: center;
 }
 
-.homePage {
-    margin: 25px;
+.footerBlock > p {
+    margin: 0;
 }
+
 
 .carouselContainer {
     margin: 25px;
