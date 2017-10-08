@@ -2,15 +2,16 @@
     background-color: lightblue; 
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: -webkit-fill-available;
     align-content: space-between;
 }
 
 .navContainer{
-
+    background-color: #055864;
 }
 
 .footer {
+    background-color: lightgray;
     display: flex;
     width: 100%;
     border-top: 1px solid gray;
