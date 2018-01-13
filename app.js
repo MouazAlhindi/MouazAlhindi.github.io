@@ -125,7 +125,7 @@ function addPageParamToURL(page){
 
     var stateObj = {page: page}
     var state = page;
-    window.history.replaceState(stateObj, state, qs);
+    window.history.pushState(stateObj, state, qs);
 }
 
 function setupPage(html, pageName){
