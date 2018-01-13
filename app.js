@@ -155,7 +155,7 @@ function setupHistoryPage(){
     var qs = '/?page=' + page;
     var stateObj = {page: page}
     var state = page;
-    window.history.pushState(stateObj, state, qs);
+    window.history.replaceState(stateObj, state, qs);
 
     document.title = "Mouaz Alhindi | " + pageName
 }
