@@ -156,7 +156,7 @@ function setupHistoryPage(html, pageName){
     document.title = "Mouaz Alhindi | " + pageName
 }
 
-function loadHistoryPage(){
+function loadHistoryPage(req){
     var html = "";
     req.paths.forEach(function(path){
         html += loadHtml(path);
@@ -189,7 +189,7 @@ window.onload = function(){
 }
 
 window.onpopstate = function(){
-    determineHistoryRoute();
+    determineHistoryChange();
 }
 
 // NEW FEATURE
