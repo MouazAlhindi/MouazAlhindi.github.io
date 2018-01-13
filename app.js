@@ -125,7 +125,7 @@ function addPageParamToURL(page){
 
     var stateObj = {page: page}
     var state = page;
-    window.history.pushState(stateObj, state, qs);
+    window.history.replaceState(stateObj, state, qs);
 }
 
 function setupPage(html, pageName){
@@ -149,9 +149,9 @@ function determineRoute(){
     }
 }
 
-window.onhashchange = function(){
-    determineRoute();
-}
+// window.onhashchange = function(){
+//     determineRoute();
+// }
 
 // event listener on window on load
 window.onload = function(){
@@ -159,6 +159,10 @@ window.onload = function(){
 }
 
 window.onpopstate = function(){
+    determineRoute();
+}
+
+window.history.back = function (){
     determineRoute();
 }
 
