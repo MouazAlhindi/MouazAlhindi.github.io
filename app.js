@@ -152,10 +152,6 @@ function determineRoute(){
 function setupHistoryPage(){
     getApp().innerHTML = html;
     addEventToRouters();
-    var qs = '/?page=' + page;
-    var stateObj = {page: page}
-    var state = page;
-    window.history.replaceState(stateObj, state, qs);
 
     document.title = "Mouaz Alhindi | " + pageName
 }
