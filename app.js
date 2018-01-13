@@ -149,6 +149,40 @@ function determineRoute(){
     }
 }
 
+function setupHistoryPage(){
+    getApp().innerHTML = html;
+    addEventToRouters();
+    var qs = '/?page=' + page;
+    var stateObj = {page: page}
+    var state = page;
+    window.history.pushState(stateObj, state, qs);
+
+    document.title = "Mouaz Alhindi | " + pageName
+}
+
+function loadHistoryPage(){
+    var html = "";
+    req.paths.forEach(function(path){
+        html += loadHtml(path);
+    })
+    currentPage = req.name;
+    setupHistoryPage(html, req.name);
+}
+
+function determineHistoryChange(){
+    var params = getQueryParams();
+    if (params && params.page != currentPage){
+        var routeTo = params.page;
+        router.forEach(function(route){
+            if(route.name == routeTo){
+                loadHistoryPage(route);
+            }
+        })
+    } else {
+        loadHistoryPage(router[0]);
+    }
+}
+
 // window.onhashchange = function(){
 //     determineRoute();
 // }
@@ -163,7 +197,7 @@ window.onpopstate = function(){
 }
 
 window.history.back = function (){
-    determineRoute();
+    determineHistoryChange();
 }
 
 
