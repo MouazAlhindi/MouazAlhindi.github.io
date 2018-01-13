@@ -149,7 +149,7 @@ function determineRoute(){
     }
 }
 
-function setupHistoryPage(){
+function setupHistoryPage(html, pageName){
     getApp().innerHTML = html;
     addEventToRouters();
 
@@ -189,13 +189,8 @@ window.onload = function(){
 }
 
 window.onpopstate = function(){
-    determineRoute();
+    determineHistoryRoute();
 }
-
-window.history.back = function (){
-    determineHistoryChange();
-}
-
 
 // NEW FEATURE
 // PROJECT: PERSONA.JS
