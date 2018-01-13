@@ -1,0 +1,27 @@
+PAGE JS STRUCTURE
+
+- PAGE HEADER
+
+- PAGE BODY
+
+- PAGE FOOTER
+
+ALL THESE COMPONENTS WILL BE PROCESSED NO MATTER WHAT
+
+WITHIN....
+
+PAGE HEADER
+- heading
+- sub_header
+
+PAGE BODY
+- HTML FILE WITH INDEX (with .html extenstion in string)
+
+PAGE HEADER
+
+- LEFT COLUMN
+
+- RIGHT COLUMN
+
+BOTH COLUMNS TAKE IN AN ARRAY STRUCTURE SUCH AS...
+    var col = [{key: ...., value: ....},{...},{...}];
