@@ -94,13 +94,14 @@ function addEventToRouters(){
 }
 
 function route(page){
-    console.log(page.target.getAttribute('page'));
     var pageTarget = page.target.getAttribute('page');
-    router.forEach(function(routeObj){
-        if(routeObj.name == pageTarget){
-            loadPage(routeObj);
-        }
-    })
+    if(pageTarget != currentPage){
+        router.forEach(function(routeObj){
+            if(routeObj.name == pageTarget){
+                loadPage(routeObj);
+            }
+        })    
+    }
 }
 
 function loadPage(req){
@@ -131,6 +132,8 @@ function setupPage(html, pageName){
 
 function determineRoute(){
     var params = getQueryParams();
+    console.log(params.page)
+    console.log(currentPage)
     if (params && params.page != currentPage){
         var routeTo = params.page;
         router.forEach(function(route){
@@ -151,3 +154,12 @@ window.onhashchange = function(){
 window.onload = function(){
     determineRoute();
 }
+
+window.onpopstate = function(){
+    determineRoute();
+}
+
+
+// NEW FEATURE
+// PROJECT: PERSONA.JS
+// 
