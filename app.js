@@ -59,6 +59,13 @@ function loadHtml(href) {
     return xmlhttp.responseText;
 }
 
+function loadData(href) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET" ,href , false);
+    xmlhttp.send();
+    return JSON.parse(xmlhttp.response)
+}
+
 function getQueryParams(){
     var location = document.location.href;
     var paramList = location.split('?');
@@ -81,13 +88,11 @@ function getParamObject(list){
 }
 
 function loadRequest(){
-    console.log(getApp());
     getApp().innerHTML = loadHtml('templates/components/navbar.html');    
 }
 
 function addEventToRouters(){
     routerItems = document.querySelectorAll('#router');
-    console.log(routerItems);
     routerItems.forEach(function(item){
         item.addEventListener('click', route);
     });
@@ -132,8 +137,6 @@ function setupPage(html, pageName){
 
 function determineRoute(){
     var params = getQueryParams();
-    console.log(params.page)
-    console.log(currentPage)
     if (params && params.page != currentPage){
         var routeTo = params.page;
         router.forEach(function(route){
@@ -162,4 +165,3 @@ window.onpopstate = function(){
 
 // NEW FEATURE
 // PROJECT: PERSONA.JS
-// 
