@@ -1,0 +1,34 @@
+/* base styles of index.html */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+    height: 100%;
+}
+
+/* styles for navbar.html */
+.navbar {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+}
+
+.navbar .nav-item{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.nav-item a:hover {
+    background-color: black;
+    color:white;
+}
