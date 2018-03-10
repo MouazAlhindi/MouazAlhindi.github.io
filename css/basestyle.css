@@ -1,3 +1,17 @@
+/*
+CSS Standars of Website
+
+Color 1: #3399FF
+Color 2: #D6EAFF
+Navbar Font Size: 1.25rem
+
+*/
+
+/* GLOBAL CLASSES */
+.header {
+    font-size:4em;
+}
+
 /* base styles of index.html */
 html {
     height: 100%;
@@ -6,6 +20,7 @@ html {
 body {
     height: 100%;
     margin: 0;
+    background-color:#D6EAFF;
 }
 
 #app {
@@ -21,14 +36,68 @@ body {
     /* position: fixed; */
     top: 0;
     width: 100%;
+    background-color:#3399FF;
+    font-family: "Arial Black", sans-serif;
+    font-size: 1.25em; 
 }
 
 .navbar .nav-item{
-    margin: 1rem;
+    flex-basis: 20%;
     padding: 1rem;
+    text-align: center;
+    transition-timing-function: ease-out;
+    transition:.5s; 
 }
 
-.nav-item a:hover {
-    background-color: black;
-    color:white;
+.navbar .nav-item:hover {
+    background-color: #1E5B99;
+    color: #D6EAFF;
+    transition-timing-function: ease-in;
+    transition:.5s;
+}
+
+/* Home Page Styles  */
+
+.home {
+    margin: 3rem;
+    text-align: center;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* Education Page Styles  */
+
+.education {
+    margin: 3rem;
+    text-align: center;
+    animation: fadein 2s;
+}
+
+/* About Me Page Styles  */
+
+.aboutme {
+    margin: 3rem;
+    text-align: center;
+    animation: fadein 2s;
+}
+
+/* Hobbies Page Styles  */
+
+.hobbies {
+    margin: 3rem;
+    text-align: center;
+    animation: fadein 3s;
+}
+
+/* Projects Page Styles  */
+
+.projects {
+    margin: 3rem;
+    text-align: center;
+    animation: fadein 2s;
 }
