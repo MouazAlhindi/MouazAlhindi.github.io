@@ -6,6 +6,7 @@ html {
 body {
     height: 100%;
     margin: 0;
+    background-color:#D6EAFF;
 }
 
 #app {
@@ -21,14 +22,20 @@ body {
     /* position: fixed; */
     top: 0;
     width: 100%;
+    background-color:#3399FF;
+    font-family: "Arial Black", sans-serif;
+    font-size: 1.25em; 
 }
 
 .navbar .nav-item{
-    margin: 1rem;
+    flex-basis: 20%;
     padding: 1rem;
+    text-align: center;
 }
 
-.nav-item a:hover {
-    background-color: black;
-    color:white;
+.navbar .nav-item:hover {
+    background-color: #1E5B99;
+    color: #D6EAFF;
+    transition-timing-function: ease-in;
+    transition:.5s;
 }
