@@ -8,8 +8,34 @@ Navbar Font Size: 1.25rem
 */
 
 /* GLOBAL CLASSES */
+.header-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 7rem;
+    max-width: 1024px;
+    min-width: 600px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 4px 4px gray;
+}
+
 .header {
     font-size:4em;
+    margin: 0;
+    padding: 0;
+    animation: fadein 2s;
+}
+
+.page {
+    margin: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* base styles of index.html */
@@ -56,12 +82,17 @@ body {
     transition:.5s;
 }
 
-/* Home Page Styles  */
+.navbar .nav-item:active {
+    color: black;
+}
 
+/* Home Page Styles  */
 .home {
-    margin: 3rem;
-    text-align: center;
-    animation: fadein 2s;
+    
+}
+
+.home-content {
+    animation: fadein 2s;    
 }
 
 @keyframes fadein {
@@ -73,31 +104,39 @@ body {
 /* Education Page Styles  */
 
 .education {
-    margin: 3rem;
-    text-align: center;
+
+}
+
+.education-container{
     animation: fadein 2s;
 }
 
 /* About Me Page Styles  */
 
 .aboutme {
-    margin: 3rem;
-    text-align: center;
+
+}
+
+.aboutme-container {
     animation: fadein 2s;
 }
 
 /* Hobbies Page Styles  */
 
 .hobbies {
-    margin: 3rem;
-    text-align: center;
-    animation: fadein 3s;
+
+}
+
+.hobbies-container {
+    animation: fadein 2s;
 }
 
 /* Projects Page Styles  */
 
 .projects {
-    margin: 3rem;
-    text-align: center;
+
+}
+
+.projects-container {
     animation: fadein 2s;
 }
