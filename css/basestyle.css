@@ -116,7 +116,7 @@ body {
     background-color:#3399FF;
     font-family: "Arial Black", sans-serif;
     font-size: 1.25em; 
-    
+    z-index: 100;
 }
 
 .navbar .nav-item{
@@ -145,9 +145,10 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color: #3399FF;
     color: white;
     text-align: center;
+    z-index: 100;
 }
 
 
