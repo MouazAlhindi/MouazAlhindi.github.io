@@ -13,35 +13,40 @@ var router = [
         name:"home", 
         paths: [
             "templates/components/navbar.html",
-            "templates/views/home.html"
+            "templates/views/home.html",
+            "templates/components/footer.html"
         ]
     },
     {
         name:"projects", 
         paths: [
             "templates/components/navbar.html",
-            "templates/views/projects.html"
+            "templates/views/projects.html",
+            "templates/components/footer.html"
         ]
     },
     {   
         name:"education", 
         paths: [
             "templates/components/navbar.html",
-            "templates/views/education.html"
+            "templates/views/education.html",
+            "templates/components/footer.html"
         ]
     },
     {   
         name:"hobbies", 
         paths: [
             "templates/components/navbar.html",
-            "templates/views/hobbies.html"
+            "templates/views/hobbies.html",
+            "templates/components/footer.html"
         ]
     },
     {   
         name:"aboutme", 
         paths: [
             "templates/components/navbar.html",
-            "templates/views/aboutme.html"
+            "templates/views/aboutme.html",
+            "templates/components/footer.html"
         ]
     },
 ]
