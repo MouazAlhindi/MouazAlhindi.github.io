@@ -44,6 +44,7 @@ Navbar Font Size: 1.25rem
 
 .page {
     margin: 3rem;
+    margin-top: 100px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -54,18 +55,30 @@ Navbar Font Size: 1.25rem
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .card {
     background-color: white;
     padding: 1rem;
+    margin: 1rem;
     font-size: 1.25rem;
     border-radius: 5px;
     box-shadow: 4px 4px gray;
     transition-timing-function: ease-out;
     transition:.5s; 
+    flex-basis: 40%;
+    min-width: 500px;
+    max-width: 800px;
+    flex-grow: 1;
+}
+
+.routing-card {
+    flex-basis: 15%;
+    max-width: 300px;
+    min-width: 150px;
+    height: 300px;
 }
 
 .card:hover {
@@ -97,10 +110,13 @@ body {
     justify-content: space-around;
     /* position: fixed; */
     top: 0;
+    position: fixed;
+    overflow: hidden;
     width: 100%;
     background-color:#3399FF;
     font-family: "Arial Black", sans-serif;
     font-size: 1.25em; 
+    
 }
 
 .navbar .nav-item{
@@ -122,6 +138,18 @@ body {
 .navbar .nav-item:active {
     color: black;
 }
+
+/* styles for footer.html */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
 
 /* Home Page Styles  */
 .home {
