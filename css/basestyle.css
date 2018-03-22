@@ -78,7 +78,7 @@ Navbar Font Size: 1.25rem
     flex-basis: 15%;
     max-width: 300px;
     min-width: 150px;
-    height: 300px;
+    height: auto;
 }
 
 .card:hover {
