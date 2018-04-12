@@ -103,7 +103,11 @@ html {
 body {
     height: 100%;
     margin: 0;
-    background-color:#D6EAFF;
+    /* background-color: #D6EAFF; */
+    background:linear-gradient(#D6EAFF, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 #app {
@@ -221,6 +225,7 @@ body {
 }
 
 .education-card-header {
+    margin: .5rem 0;
     padding-bottom: 1rem;
     border-bottom: 2px solid gray;
 }
