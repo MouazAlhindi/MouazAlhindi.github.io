@@ -189,14 +189,10 @@ function determineHistoryChange(){
 function currentNavPage(){
     var navItemList = Array.from(document.getElementsByClassName('nav-item'));
     navItemList.forEach(function(navItem){
-        console.log("entered For loop");
-        console.log(currentPage);
         var classList = navItem.classList;
         if(classList.contains('nav-item') && navItem.getAttribute('page') == currentPage){
-            console.log("true if");
             navItem.classList.add('selected-nav-item');
         } else {
-            console.log("false if");
             navItem.classList.remove('selected-nav-item');
         }
     })
