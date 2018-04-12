@@ -131,6 +131,11 @@ body {
     z-index: 100;
 }
 
+.selected-nav-item{
+    color: white;
+    background-color: #1E5B99;
+}
+
 .navbar .nav-item{
     flex-basis: 20%;
     padding: 1rem;
