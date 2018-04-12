@@ -59,6 +59,14 @@ Navbar Font Size: 1.25rem
     justify-content: space-around;
 }
 
+.card-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
 .card {
     background-color: white;
     padding: 1rem;
@@ -78,7 +86,7 @@ Navbar Font Size: 1.25rem
     flex-basis: 15%;
     max-width: 300px;
     min-width: 150px;
-    height: 300px;
+    height: auto;
 }
 
 .card:hover {
@@ -95,7 +103,11 @@ html {
 body {
     height: 100%;
     margin: 0;
-    background-color:#D6EAFF;
+    /* background-color: #D6EAFF; */
+    background:linear-gradient(#D6EAFF, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 #app {
@@ -117,6 +129,11 @@ body {
     font-family: "Arial Black", sans-serif;
     font-size: 1.25em; 
     z-index: 100;
+}
+
+.selected-nav-item{
+    color: white;
+    background-color: #1E5B99;
 }
 
 .navbar .nav-item{
@@ -151,6 +168,31 @@ body {
     z-index: 100;
 }
 
+.footer-container{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.footer-block {
+    flex-basis: 33.3%;
+    align-self: center;
+}
+
+.footer-block p{
+    margin: .25rem;
+    font-family: sans-serif;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: black;
+}
+
+.footer-block img {
+    width: 20%;
+    align-self: center;
+    min-width: 100px;
+    max-width: 200px;
+}
 
 /* Home Page Styles  */
 .home {
@@ -163,9 +205,44 @@ body {
 
 /* Education Page Styles  */
 
+.education-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 850px;
+}
+
+.education-image{
+    margin: 1rem;
+    flex-basis: 30%;
+}
+
+.education-image img {
+    width: 250px;
+    height: auto;
+}
+
+.education-card-body {
+    margin: 1rem;
+    flex-basis: 70%;
+}
+
+.education-card-header {
+    margin: .5rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid gray;
+}
+
 .education {
 
 }
+
+.education-content {
+    width: 80%;
+}
+
 
 .education-container{
     animation: fadein 2s;

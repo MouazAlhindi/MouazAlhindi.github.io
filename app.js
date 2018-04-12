@@ -137,7 +137,8 @@ function setupPage(html, pageName){
     getApp().innerHTML = html;
     addEventToRouters();
     addPageParamToURL(pageName);
-    document.title = "Mouaz Alhindi | " + pageName
+    document.title = "Mouaz Alhindi | " + pageName;
+    currentNavPage();
 }
 
 function determineRoute(){
@@ -168,6 +169,7 @@ function loadHistoryPage(req){
     })
     currentPage = req.name;
     setupHistoryPage(html, req.name);
+    currentNavPage();
 }
 
 function determineHistoryChange(){
@@ -182,6 +184,23 @@ function determineHistoryChange(){
     } else {
         loadHistoryPage(router[0]);
     }
+}
+
+function currentNavPage(){
+    var navItemList = Array.from(document.getElementsByClassName('nav-item'));
+    navItemList.forEach(function(navItem){
+        console.log("entered For loop");
+        console.log(currentPage);
+        var classList = navItem.classList;
+        if(classList.contains('nav-item') && navItem.getAttribute('page') == currentPage){
+            console.log("true if");
+            navItem.classList.add('selected-nav-item');
+        } else {
+            console.log("false if");
+            navItem.classList.remove('selected-nav-item');
+        }
+    })
+
 }
 
 // window.onhashchange = function(){
