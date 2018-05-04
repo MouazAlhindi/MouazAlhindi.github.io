@@ -100,6 +100,11 @@ function addEventToRouters(){
     routerItems = document.querySelectorAll('#router');
     routerItems.forEach(function(item){
         item.addEventListener('click', route);
+        var childrenItems = Array.from(item.children)
+        childrenItems.forEach(function(childItem){
+            childItem.setAttribute('page', item.getAttribute('page'))
+            childItem.addEventListener('click', route);
+        });    
     });
 }
 
