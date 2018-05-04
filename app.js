@@ -100,6 +100,11 @@ function addEventToRouters(){
     routerItems = document.querySelectorAll('#router');
     routerItems.forEach(function(item){
         item.addEventListener('click', route);
+        var childrenItems = Array.from(item.children)
+        childrenItems.forEach(function(childItem){
+            childItem.setAttribute('page', item.getAttribute('page'))
+            childItem.addEventListener('click', route);
+        });    
     });
 }
 
@@ -137,8 +142,12 @@ function setupPage(html, pageName){
     getApp().innerHTML = html;
     addEventToRouters();
     addPageParamToURL(pageName);
-    document.title = "Mouaz Alhindi | " + pageName;
+    document.title = "Mouaz Alhindi | " + capFirstLetter(pageName);
     currentNavPage();
+}
+
+function capFirstLetter(word){
+    return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
 function determineRoute(){

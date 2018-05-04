@@ -82,6 +82,11 @@ Navbar Font Size: 1.25rem
     flex-grow: 1;
 }
 
+.card h1 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+}
+
 .routing-card {
     flex-basis: 15%;
     max-width: 300px;
@@ -103,10 +108,10 @@ html {
 body {
     height: 100%;
     margin: 0;
-    /* background-color: #D6EAFF; */
-    background:linear-gradient(#D6EAFF, white);
+    background-color: #D6EAFF;
+    /* background:linear-gradient(#D6EAFF, white);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     
 }
 
