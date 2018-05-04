@@ -82,6 +82,11 @@ Navbar Font Size: 1.25rem
     flex-grow: 1;
 }
 
+.card h1 {
+    border-bottom: 1px solid gray;
+    padding-bottom: 1rem;
+}
+
 .routing-card {
     flex-basis: 15%;
     max-width: 300px;
