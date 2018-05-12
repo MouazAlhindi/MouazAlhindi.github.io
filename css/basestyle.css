@@ -29,22 +29,42 @@ Navbar Font Size: 1.25rem
     box-shadow: 4px 4px gray;
 }
 
+.header-content{
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.header-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .header {
     font-size:4em;
     margin: 0;
     padding: 0;
     animation: fadein 2s;
     user-select: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .content {
+    margin: 0 2rem;
     margin-top: 25px;
     animation: fadein 1.5s;
 }
 
 .page {
-    margin: 3rem;
-    margin-top: 100px;
+    margin: 60px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -108,11 +128,12 @@ html {
 body {
     height: 100%;
     margin: 0;
-    background-color: #D6EAFF;
+    /* background-color: #D6EAFF; */
+    background-color: white;
+
     /* background:linear-gradient(#D6EAFF, white);
     background-repeat: no-repeat;
     background-attachment: fixed; */
-    
 }
 
 #app {
