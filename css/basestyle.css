@@ -14,7 +14,8 @@ Navbar Font Size: 1.25rem
 
 
 /* GLOBAL CLASSES */
-.header-container {
+
+/* .header-container {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -27,7 +28,7 @@ Navbar Font Size: 1.25rem
     justify-content: center;
     border-radius: 1rem;
     box-shadow: 4px 4px gray;
-}
+} */
 
 .header-content{
     width: 100%;
@@ -36,6 +37,8 @@ Navbar Font Size: 1.25rem
     position: relative;
     text-align: center;
     color: white;
+
+    animation: fadein 2s;
 }
 
 .header-content img{
@@ -48,9 +51,10 @@ Navbar Font Size: 1.25rem
     font-size:4em;
     margin: 0;
     padding: 0;
-    animation: fadein 2s;
+    /* animation: fadein 1s; */
     user-select: none;
 
+    font-family: "Arial Black", sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,7 +64,7 @@ Navbar Font Size: 1.25rem
 .content {
     margin: 0 2rem;
     margin-top: 25px;
-    animation: fadein 1.5s;
+    animation: fadein 3s;
 }
 
 .page {
