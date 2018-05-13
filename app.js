@@ -1,5 +1,4 @@
 // GLOBAL VARIABLES
-
 var xhr = new XMLHttpRequest();
 var currentURL = document.URL;
 const defaultRoute = 'home';
@@ -7,6 +6,44 @@ var currentPage = '';
 var previousPage = '';
 var forwardPage = '';
 // var currentParams;
+
+// Cache Logic
+var htmlCache = [];
+/*
+example cache object
+{
+    path: ""
+    data: ""
+}
+*/
+
+function checkCache(target){
+    var found = false;
+    htmlCache.forEach(function(cacheObject){
+        if(cacheObject.path ==  target){
+            found = true;
+        }
+    });
+    return found;
+
+}
+
+function addCache(url, html){
+    if(!checkCache(url)){
+        var cacheObject = {path: url, data: html};
+        htmlCache.push(cacheObject);
+    }    
+}
+
+function getCacheData(target){
+    var data;
+    htmlCache.forEach(function(cacheObject){
+        if(cacheObject.path == target){
+            data = cacheObject.data;
+        }
+    })
+    return data;
+}
 
 var router = [
     {   
@@ -58,10 +95,20 @@ function getApp(){
 
 // loads html based on path
 function loadHtml(href) {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET", href, false);
-    xmlhttp.send();
-    return xmlhttp.responseText;
+    var requestBool = checkCache(href);
+
+    var httpResponse;
+
+    if(requestBool){
+        httpResponse = getCacheData(href);
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", href, false);
+        xmlhttp.send();
+        httpResponse = xmlhttp.responseText;
+        addCache(href, httpResponse);
+    }
+    return httpResponse;
 }
 
 function loadData(href) {
