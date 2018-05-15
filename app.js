@@ -63,29 +63,25 @@ var router = [
         ]
     },
     {   
-        name:"education", 
+        name:"biography", 
         paths: [
             "templates/components/navbar.html",
+            "templates/views/biography.html",
             "templates/views/education.html",
+            "templates/views/hobbies.html",
             "templates/components/footer.html"
         ]
     },
-    {   
-        name:"skills", 
+    {
+        name: "credentials",
         paths: [
             "templates/components/navbar.html",
+            "templates/views/credentials.html",
             "templates/views/skills.html",
+            "templates/views/experience.html",
             "templates/components/footer.html"
         ]
-    },
-    {   
-        name:"aboutme", 
-        paths: [
-            "templates/components/navbar.html",
-            "templates/views/aboutme.html",
-            "templates/components/footer.html"
-        ]
-    },
+    }
 ]
 
 // returns main div in index.html
