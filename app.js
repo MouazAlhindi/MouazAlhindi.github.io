@@ -71,10 +71,10 @@ var router = [
         ]
     },
     {   
-        name:"hobbies", 
+        name:"skills", 
         paths: [
             "templates/components/navbar.html",
-            "templates/views/hobbies.html",
+            "templates/views/skills.html",
             "templates/components/footer.html"
         ]
     },
