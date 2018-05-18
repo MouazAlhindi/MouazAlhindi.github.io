@@ -264,5 +264,12 @@ window.onpopstate = function(){
     determineHistoryChange();
 }
 
+// Sub Section Logic \\
+
+
+
+
+
+
 // NEW FEATURE
 // PROJECT: PERSONA.JS
