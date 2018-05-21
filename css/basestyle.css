@@ -33,11 +33,10 @@ Navbar Font Size: 1.25rem
 .header-content{
     width: 100%;
     height: 500px;
-
+    background-color: #5badff;
     position: relative;
     text-align: center;
     color: white;
-
     animation: fadein 2s;
 }
 
