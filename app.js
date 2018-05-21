@@ -184,6 +184,7 @@ function addPageParamToURL(page){
 function setupPage(html, pageName){
     getApp().innerHTML = html;
     addEventToRouters();
+    setupCollapsible();
     addPageParamToURL(pageName);
     document.title = "Mouaz Alhindi | " + capFirstLetter(pageName);
     currentNavPage();
@@ -210,7 +211,7 @@ function determineRoute(){
 function setupHistoryPage(html, pageName){
     getApp().innerHTML = html;
     addEventToRouters();
-
+    setupCollapsible();
     document.title = "Mouaz Alhindi | " + pageName
 }
 
@@ -267,9 +268,36 @@ window.onpopstate = function(){
 // Sub Section Logic \\
 
 
+// Card open and close
+function setupCollapsible(){
+    var collapsibleElements = Array.from(document.getElementsByClassName('collapsible'));
+    var triggerElements = [];
 
+    collapsibleElements.map(function(element){
+        Array.from(element.children).map(function(child){
+            if(child.classList.contains('collapsible-trigger')){
+                triggerElements.push(child);
+            }
+        })
+    })
 
+    triggerElements.forEach(function(target){
+        target.addEventListener('click', function(){
+            var content = this.nextElementSibling;
+            if(content.classList.contains("collapsible-target")){
+                toggleContentDisplay(content);
+            }
+        });
+    })
+}
 
+function toggleContentDisplay(targetElement){
+    if(targetElement.style.display == ""){
+        targetElement.style.display = "none";
+    } else {
+        targetElement.style.display = ""
+    }
+}
 
 // NEW FEATURE
 // PROJECT: PERSONA.JS
