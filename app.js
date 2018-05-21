@@ -294,8 +294,12 @@ function setupCollapsible(){
 function toggleContentDisplay(targetElement){
     if(targetElement.style.display == ""){
         targetElement.style.display = "none";
+        targetElement.parentElement.style.minWidth = "fit-content";
+        // targetElement.style.left = "-10000px"
     } else {
-        targetElement.style.display = ""
+        targetElement.style.display = "";
+        targetElement.parentElement.style.minWidth = "800px";
+        // targetElement.style.left = "0"
     }
 }
 

@@ -298,9 +298,10 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 100%;
-    max-width: 1000px;
-    min-width: 850px;
+    width: auto;
+    max-width: none;
+    min-width: 800px;
+    overflow: hidden;
 }
 
 .education-image{
@@ -311,11 +312,19 @@ body {
 .education-image img {
     width: 250px;
     height: auto;
+    transition: transform .2s;
+}
+
+.education-image img:hover {
+    transform: scale(1.25);
 }
 
 .education-card-body {
     margin: 1rem;
     flex-basis: 70%;
+    /* animation: fadein 2s; */
+    position: relative;
+
 }
 
 .education-card-header {
