@@ -60,6 +60,12 @@ Navbar Font Size: 1.25rem
     transform: translate(-50%, -50%);
 }
 
+.home-header {
+    color: black;
+    right: 50%;
+    left: 25%;
+}
+
 .content {
     margin: 0 2rem;
     margin-top: 25px;
