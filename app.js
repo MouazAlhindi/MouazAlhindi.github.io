@@ -144,11 +144,19 @@ function addEventToRouters(){
     routerItems.forEach(function(item){
         item.addEventListener('click', route);
         var childrenItems = Array.from(item.children)
-        childrenItems.forEach(function(childItem){
-            childItem.setAttribute('page', item.getAttribute('page'))
-            childItem.addEventListener('click', route);
-        });    
+        addEventToRouterChildren(childrenItems, item)
     });
+}
+
+function addEventToRouterChildren(childrenItems, originalItem){
+    childrenItems.forEach(function(childItem){
+        childItem.setAttribute('page', originalItem.getAttribute('page'))
+        childItem.addEventListener('click', route);
+        var children = Array.from(childItem.children)
+        if (children.length > 0){
+            addEventToRouterChildren(children, childItem)
+        }
+    });    
 }
 
 function route(page){
