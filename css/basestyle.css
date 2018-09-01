@@ -397,6 +397,22 @@ body {
 
 }
 
+.project-card {
+
+}
+
+.project-header {
+
+}
+
+.project-body {
+
+}
+
+.project-body div h2 {
+    text-align: left;
+}
+
 .projects-container {
     animation: fadein 2s;
 }
