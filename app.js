@@ -76,7 +76,6 @@ var router = [
         name: "credentials",
         paths: [
             "templates/components/navbar.html",
-            "templates/views/credentials.html",
             "templates/views/skills.html",
             "templates/views/experience.html",
             "templates/components/footer.html"
