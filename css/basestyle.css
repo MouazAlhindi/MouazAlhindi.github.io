@@ -47,7 +47,7 @@ Navbar Font Size: 1.25rem
 }
 
 .header {
-    font-size:4em;
+    font-size:5em;
     margin: 0;
     padding: 0;
     /* animation: fadein 1s; */
@@ -70,6 +70,7 @@ Navbar Font Size: 1.25rem
     margin: 0 2rem;
     margin-top: 25px;
     animation: fadein 3s;
+    width: 100%;
 }
 
 .page {
@@ -239,7 +240,7 @@ body {
     position: fixed;
     overflow: hidden;
     width: 100%;
-    background-color:#3399FF;
+    background-color:rgb(147, 203, 240);
     font-family:  "Arial Black", sans-serif;
     font-size: 1.25em; 
     z-index: 100;
@@ -276,7 +277,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #3399FF;
+    background-color: rgb(147, 203, 240);
     color: white;
     text-align: center;
     z-index: 100;
@@ -371,6 +372,81 @@ body {
     animation: fadein 2s;
 }
 
+/* skills section */
+
+.skill-card {
+    height: auto;
+    max-width: 300px;
+    width: 300px;
+}
+
+.skill-card h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.skill-card p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.skill-block {
+    max-width: 250px;
+    min-width: 250px;
+    width: 250px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-block img {
+    max-width: 250px;
+    max-height: 200px;
+}
+
+.skill-block p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.skill-header{
+
+}
+
+.skill-header h2 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.skill-header h6 {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Experience Section */
+
+.experience-card{
+    width: auto;
+}
+
+.experience-card img {
+    max-width: 700px;
+}
+
+.experience-card-section {
+    font-family: 'Roboto', sans-serif;
+}
+
+.experience-card-section p {
+    margin: .5rem 0;
+}
+
+.experience-card-section h3 {
+    margin-bottom: .5rem;
+}
+
 /* About Me Page Styles  */
 
 .aboutme {
@@ -431,7 +507,7 @@ body {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #3399FF; 
+    background: rgb(147, 203, 240); 
 }
 
 /* Handle on hover */
