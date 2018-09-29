@@ -325,7 +325,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     width: auto;
-    max-width: none;
+    /* max-width: none; */
     min-width: 800px;
     overflow: hidden;
 }
@@ -350,7 +350,10 @@ body {
     flex-basis: 70%;
     /* animation: fadein 2s; */
     position: relative;
+}
 
+.education-card-body div p {
+    margin: .5rem 0;
 }
 
 .education-card-header {

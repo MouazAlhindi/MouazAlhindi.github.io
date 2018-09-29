@@ -68,7 +68,6 @@ var router = [
             "templates/components/navbar.html",
             "templates/views/biography.html",
             "templates/views/education.html",
-            "templates/views/hobbies.html",
             "templates/components/footer.html"
         ]
     },
