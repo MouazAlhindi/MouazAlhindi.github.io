@@ -194,6 +194,7 @@ function setupPage(html, pageName){
     addPageParamToURL(pageName);
     document.title = "Mouaz Alhindi | " + capFirstLetter(pageName);
     currentNavPage();
+    scrollTo(0, 0);
 }
 
 function capFirstLetter(word){
@@ -218,7 +219,8 @@ function setupHistoryPage(html, pageName){
     getApp().innerHTML = html;
     addEventToRouters();
     setupCollapsible();
-    document.title = "Mouaz Alhindi | " + pageName
+    document.title = "Mouaz Alhindi | " + pageName;
+    scrollTo(0, 0);
 }
 
 function loadHistoryPage(req){
