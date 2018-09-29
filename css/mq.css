@@ -3,3 +3,28 @@
         font-size: 4rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        font-size: .75rem;
+    }
+
+    .card {
+        min-width: fit-content;
+        font-size: 1rem;
+    }
+
+    .footer-block img {
+        display: none;
+    }
+
+    .card img {
+        max-width: 300px;
+    }
+
+    .education-card{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
