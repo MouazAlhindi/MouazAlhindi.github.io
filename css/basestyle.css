@@ -476,6 +476,16 @@ body {
 
 }
 
+.project-section-header h2 {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-section-header h6 {
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 .project-card {
 
 }
