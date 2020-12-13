@@ -217,7 +217,7 @@ body {
     height: 100%;
     margin: 0;
     /* background-color: #D6EAFF; */
-    background-color: white;
+    background-color: #f7f7f7;
 
     /* background:linear-gradient(#D6EAFF, white);
     background-repeat: no-repeat;
@@ -239,6 +239,7 @@ body {
     position: fixed;
     overflow: hidden;
     width: 100%;
+    height: 60px;
     background-color:rgb(147, 203, 240);
     font-family:  "Arial Black", sans-serif;
     font-size: 1.25em; 
@@ -276,6 +277,7 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 60px;
     background-color: rgb(147, 203, 240);
     color: white;
     text-align: center;
@@ -295,7 +297,7 @@ body {
 
 .footer-block p{
     margin: .25rem;
-    font-family:  "Arial Black", sans-serif;
+    font-family: "Helvetica" "Arial Black", sans-serif;
     font-size: 1.15em;
     font-weight: 600;
     color: black;
@@ -383,11 +385,11 @@ body {
 }
 
 .skill-card h2{
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica", 'Roboto', sans-serif;
 }
 
 .skill-card p{
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica", "Roboto", sans-serif;
 }
 
 
@@ -409,7 +411,7 @@ body {
 }
 
 .skill-block p{
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica", 'Roboto', sans-serif;
     font-weight: 600;
 }
 
@@ -419,12 +421,12 @@ body {
 
 .skill-header h2 {
     font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica", 'Roboto', sans-serif;
 }
 
 .skill-header h6 {
     font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica", 'Roboto', sans-serif;
 }
 
 /* Experience Section */
@@ -439,7 +441,7 @@ body {
 }
 
 .experience-card-section {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica", 'Roboto', sans-serif;
 }
 
 .experience-card-section p {
@@ -478,12 +480,12 @@ body {
 
 .project-section-header h2 {
     font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica", 'Roboto', sans-serif;
 }
 
 .project-section-header h6 {
     font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Helvetica", 'Roboto', sans-serif;
 }
 
 .project-card {
@@ -526,4 +528,8 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #1E5B99; 
+}
+
+.welcome-header {
+    font-size: 100px;
 }
