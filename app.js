@@ -76,6 +76,13 @@ var router = [
         paths: [
             "templates/components/navbar.html",
             "templates/views/skills.html",
+            "templates/components/footer.html"
+        ]
+    },
+    {
+        name: "experience",
+        paths: [
+            "templates/components/navbar.html",
             "templates/views/experience.html",
             "templates/components/footer.html"
         ]
