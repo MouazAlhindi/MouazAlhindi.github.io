@@ -51,7 +51,6 @@ var router = [
         paths: [
             "templates/components/navbar.html",
             "templates/views/home.html",
-            "templates/components/footer.html"
         ]
     },
     {
@@ -59,7 +58,6 @@ var router = [
         paths: [
             "templates/components/navbar.html",
             "templates/views/projects.html",
-            "templates/components/footer.html"
         ]
     },
     {   
@@ -68,15 +66,13 @@ var router = [
             "templates/components/navbar.html",
             "templates/views/biography.html",
             "templates/views/education.html",
-            "templates/components/footer.html"
         ]
     },
     {
-        name: "credentials",
+        name: "skills",
         paths: [
             "templates/components/navbar.html",
             "templates/views/skills.html",
-            "templates/components/footer.html"
         ]
     },
     {
@@ -84,7 +80,6 @@ var router = [
         paths: [
             "templates/components/navbar.html",
             "templates/views/experience.html",
-            "templates/components/footer.html"
         ]
     }
 ]
