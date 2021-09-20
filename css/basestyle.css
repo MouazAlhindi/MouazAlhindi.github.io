@@ -130,7 +130,7 @@ Navbar Font Size: 1.25rem
     transition-timing-function: ease-out;
     transition:.5s; 
     flex-basis: 40%;
-    min-width: 500px;
+    min-width: 300px !important;
     max-width: 800px;
     flex-grow: 1;
     font-family: 'Roboto', sans-serif;
