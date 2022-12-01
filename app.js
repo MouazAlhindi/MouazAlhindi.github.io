@@ -60,12 +60,18 @@ var router = [
             "templates/views/projects.html",
         ]
     },
+    {
+        name: "education",
+        paths: [
+            "templates/components/navbar.html",
+            "templates/views/education.html",
+        ]
+    },
     {   
         name:"biography", 
         paths: [
             "templates/components/navbar.html",
             "templates/views/biography.html",
-            "templates/views/education.html",
         ]
     },
     {
