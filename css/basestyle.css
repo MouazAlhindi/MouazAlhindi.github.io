@@ -362,6 +362,7 @@ body {
 
 .experience-card-section {
     font-family: "Helvetica", 'Roboto', sans-serif;
+    text-align: start;
 }
 
 .experience-card-section p {
@@ -370,6 +371,10 @@ body {
 
 .experience-card-section h3 {
     margin-bottom: .5rem;
+}
+
+.experience-card-section ul {
+    text-align: start !important;
 }
 
 /* About Me Page Styles  */
