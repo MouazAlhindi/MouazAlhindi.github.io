@@ -150,7 +150,12 @@ Navbar Font Size: 1.25rem
     min-width: 300px;
     max-width: 450px;
     margin: 1rem;
-    background-color: #5badff;
+    /* background-color: #5badff; */
+}
+
+.image-card-img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
 }
 
 .image-card-text {
@@ -159,7 +164,7 @@ Navbar Font Size: 1.25rem
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: black;
+    color: white;
     font-family:  'Roboto', sans-serif;
     margin: 0;
     opacity: 1;
